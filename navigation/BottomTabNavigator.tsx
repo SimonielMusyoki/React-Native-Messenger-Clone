@@ -7,7 +7,7 @@ import * as React from 'react';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import HomeScreen from '../screens/HomeScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+import PeopleScreen from '../screens/PeopleScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 import { View } from '../components/Themed';
 
@@ -34,7 +34,7 @@ export default function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="People"
-        component={TabTwoNavigator}
+        component={PeopleScreenNavigator}
         options={{
           tabBarIcon: ({ color }) => <Ionicons name="people-sharp" color={color}  size={30} style={{ marginBottom: -3 }}/>,
           tabBarBadge: 20,
@@ -103,14 +103,14 @@ function HomeScreenNavigator() {
   );
 }
 
-const TabTwoStack = createStackNavigator<TabTwoParamList>();
+const PeopleScreenStack = createStackNavigator<TabTwoParamList>();
 
-function TabTwoNavigator() {
+function PeopleScreenNavigator() {
   return (
-    <TabTwoStack.Navigator>
-      <TabTwoStack.Screen
+    <PeopleScreenStack.Navigator>
+      <PeopleScreenStack.Screen
         name="TabTwoScreen"
-        component={TabTwoScreen}
+        component={PeopleScreen}
         options={{ 
           headerTitle: 'People',
           headerLeft: ()=> (
@@ -152,6 +152,6 @@ function TabTwoNavigator() {
           )
          }}
       />
-    </TabTwoStack.Navigator>
+    </PeopleScreenStack.Navigator>
   );
 }
