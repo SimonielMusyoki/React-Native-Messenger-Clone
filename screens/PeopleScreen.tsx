@@ -4,12 +4,14 @@ import { Dimensions, StyleSheet, TouchableOpacity, Image, ImageBackground, FlatL
 import users from '../data/users';
 import { Text, View } from '../components/Themed';
 import status from '../data/status'
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function PeopleScreen() {
 
   const width = Dimensions.get('window').width;
   const height = Dimensions.get('window').height;
+  const navigation = useNavigation();
 
   const [activeTab, setActiveTab] = useState('people')
 
@@ -30,7 +32,13 @@ export default function PeopleScreen() {
     </View>
   )
   const renderUserComponent = ({item}) =>(
-    <TouchableOpacity style={{ flexDirection: 'row', alignItems:'center', marginHorizontal: 20, marginVertical: 10}}>
+    <TouchableOpacity 
+      style={{ flexDirection: 'row', alignItems:'center', marginHorizontal: 20, marginVertical: 10}}
+      onPress={() =>navigation.navigate('Messages',{
+        imageUri: item.imageUri,
+        name: item.name
+      }) }
+      >
       <View>
         <Image 
           source={{ uri: item.imageUri}}

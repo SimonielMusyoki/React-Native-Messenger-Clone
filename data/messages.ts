@@ -16,7 +16,7 @@ export default [
     {
         id: 3,
         messageType: 'text',
-        isMe: false,
+        isMe: true,
         message: ' How\'s Krypton ?🌎',
         sendTime: '21 min'
     },
@@ -112,7 +112,7 @@ export default [
         id: 16,
         messageType: 'image',
         isMe: true,
-        message: '',
+        message: 'Here 👆',
         imageUri: 'https://upload.wikimedia.org/wikipedia/en/8/8f/Emperor_RotJ.png',
         sendTime: '8 min'
     },

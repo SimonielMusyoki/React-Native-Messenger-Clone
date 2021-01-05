@@ -1,4 +1,5 @@
 import { EvilIcons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Dimensions, Image, StyleSheet, View, TouchableWithoutFeedback } from 'react-native';
 import { Text } from '../Themed'
@@ -10,13 +11,20 @@ export type ChatProps = {
 const Chat = (props) => {
 
     const {
-        id,
         name,
         imageUri,
         lastMessage,
         isMe,
         isRead
     } = props.chat
+
+    const navigation = useNavigation();
+    const onPress = () => {
+        navigation.navigate('Messages', {
+            imageUri: imageUri,
+            name: name
+        })
+    }
 
     const renderCharReadStatus = () => {
         if( isRead && isMe){
@@ -37,7 +45,7 @@ const Chat = (props) => {
     }
     
     return(
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback onPress={onPress}>
             <View>
                 <View style={styles.container}>
                     <View style={styles.imageContainer}>
