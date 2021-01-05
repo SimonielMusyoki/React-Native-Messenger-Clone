@@ -1,5 +1,5 @@
 import { Ionicons,FontAwesome } from '@expo/vector-icons';
-import { Image, TouchableOpacity } from 'react-native';
+import { Image, TouchableOpacity,View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -9,7 +9,6 @@ import useColorScheme from '../hooks/useColorScheme';
 import HomeScreen from '../screens/HomeScreen';
 import PeopleScreen from '../screens/PeopleScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
-import { View } from '../components/Themed';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
