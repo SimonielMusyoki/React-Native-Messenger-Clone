@@ -32,4 +32,4 @@ A Beautiful Chat Messenging UI developed in React Native
 
 ## ✋ Disclaimer !!!
 
-Images used in this app, come from a Sci-Fi named **Krypton**, I don't own them, they maybe subject to copyrights when being used in production
+Images used in this app, come from Sci-Fi Series named **Krypton**, and ** Star Wars **, I don't own them, they maybe subject to copyrights when being used in production
