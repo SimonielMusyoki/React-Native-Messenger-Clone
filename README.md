@@ -23,8 +23,6 @@ A Beautiful Chat Messenging UI developed in React Native
 
 <img src="screenshots/home.png" width="300"/> <img src="screenshots/chats.png" width="300"/> 
 
-<img src="screenshots/chats_with_images.png" width="300"/><img src="screenshots/chats.png" width="300"/> 
-
 <img src="screenshots/chats_with_images.png" width="300"/><img src="screenshots/active_users.png" width="300"/> 
 
 <img src="screenshots/stories.png" width="300"/><img src="screenshots/stories_scrolled.png" width="300"/>
