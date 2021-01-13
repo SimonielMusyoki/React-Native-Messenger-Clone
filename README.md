@@ -22,9 +22,10 @@ A Beautiful Chat Messenging UI developed in React Native
 ## 📸 ScreenShots
 
 <img src="screenshots/home.png" width="300"/> <img src="screenshots/chats.png" width="300"/> <img src="screenshots/chats_with_images.png" width="300"/>
+<img src="screenshots/chats.png" width="400"/> <img src="screenshots/chats_with_images.png" width="400"/>
 
-<img src="screenshots/active_users.png" width="300"/> <img src="screenshots/stories.png" width="300"/>
-<img src="screenshots/stories_scrolled.png" width="300"/>
+<img src="screenshots/active_users.png" width="400"/> <img src="screenshots/stories.png" width="400"/>
+<img src="screenshots/stories_scrolled.png" width="400"/>
 
 ## 🤓 Author(s)
 
@@ -32,4 +33,4 @@ A Beautiful Chat Messenging UI developed in React Native
 
 ## ✋ Disclaimer !!!
 
-Images used in this app, come from a Sci-Fi named **Krypton**, I don't own them, they maybe subject to copyrights when being used in production
+Images used in this app, come from Sci-Fi Series named **Krypton**, and **Star Wars**, I don't own them, they maybe subject to copyrights when being used in production
